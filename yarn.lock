@@ -10301,7 +10301,6 @@ ember-power-calendar@^0.16.3:
 
 ember-power-datepicker@cibernox/ember-power-datepicker:
   version "0.8.1"
-  uid da580474a2c449b715444934ddb626b7c07f46a7
   resolved "https://codeload.github.com/cibernox/ember-power-datepicker/tar.gz/da580474a2c449b715444934ddb626b7c07f46a7"
   dependencies:
     ember-basic-dropdown "^3.0.11"
@@ -12585,7 +12584,6 @@ globrex@^0.1.2:
 
 "google-caja-bower@https://github.com/acburdine/google-caja-bower#ghost":
   version "6011.0.0"
-  uid "275cb75249f038492094a499756a73719ae071fd"
   resolved "https://github.com/acburdine/google-caja-bower#275cb75249f038492094a499756a73719ae071fd"
 
 got@9.6.0:
@@ -14725,7 +14723,6 @@ keygrip@~1.1.0:
 
 "keymaster@https://github.com/madrobby/keymaster.git":
   version "1.6.3"
-  uid f8f43ddafad663b505dc0908e72853bcf8daea49
   resolved "https://github.com/madrobby/keymaster.git#f8f43ddafad663b505dc0908e72853bcf8daea49"
 
 keypair@1.0.4:
@@ -16478,7 +16475,6 @@ mocha@^2.5.3:
 
 mock-knex@TryGhost/mock-knex#8ecb8c227bf463c991c3d820d33f59efc3ab9682:
   version "0.4.9"
-  uid "8ecb8c227bf463c991c3d820d33f59efc3ab9682"
   resolved "https://codeload.github.com/TryGhost/mock-knex/tar.gz/8ecb8c227bf463c991c3d820d33f59efc3ab9682"
   dependencies:
     bluebird "^3.4.1"
@@ -20376,7 +20372,6 @@ simple-update-notifier@^1.0.7:
 
 "simplemde@https://github.com/kevinansfield/simplemde-markdown-editor.git#ghost":
   version "1.11.2"
-  uid "4c39702de7d97f9b32d5c101f39237b6dab7c3ee"
   resolved "https://github.com/kevinansfield/simplemde-markdown-editor.git#4c39702de7d97f9b32d5c101f39237b6dab7c3ee"
 
 sinon@14.0.0:
@@ -21847,6 +21842,11 @@ uid-safe@~2.1.5:
   integrity sha512-KPHm4VL5dDXKz01UuEd88Df+KzynaohSL9fBh096KWAxSKZQDI2uBrVqtvRM4rwrIrRRKsdLNML/lnaaVSRioA==
   dependencies:
     random-bytes "~1.0.0"
+
+uikit@^3.15.5:
+  version "3.15.5"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.15.5.tgz#b382c1ea1bcf0fe2e8846bf9efc177b42fcaf59b"
+  integrity sha512-mQ1UiIIT0uIIGUzmIioOAlgn1N9SFBM+E92cB5E7u3dg/uicV1nbEA2WJ1ia0ecnt35FysVMQ13w0ruyLS2k8A==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
