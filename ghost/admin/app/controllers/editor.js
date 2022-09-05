@@ -371,6 +371,28 @@ export default class EditorController extends Controller {
     }
 
     @action
+    savePrompt(prompt) {
+        let promptRecord = this.store.createRecord('prompt', prompt);
+        return promptRecord.save().then(() => {
+            this.notifications.closeAlerts('prompt.save');
+            this.notifications.showNotification(
+                `Prompt saved as "${prompt.name}"`,
+                {type: 'success'}
+            );
+            return promptRecord;
+        }).catch((error) => {
+            if (!promptRecord.errors.isEmpty) {
+                this.notifications.showAlert(
+                    `Prompt save failed: ${promptRecord.errors.messages.join('. ')}`,
+                    {type: 'error', key: 'prompt.save'}
+                );
+            }
+            promptRecord.rollbackAttributes();
+            throw error;
+        });
+    }
+
+    @action
     toggleUpdateSnippetModal(snippetRecord, updatedProperties = {}) {
         if (snippetRecord) {
             this.set('snippetToUpdate', {snippetRecord, updatedProperties});
