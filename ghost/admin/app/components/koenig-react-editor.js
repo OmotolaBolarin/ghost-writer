@@ -74,7 +74,12 @@ const editorResource = fetchKoenig();
 
 const Koenig = (props) => {
     const _Koenig = editorResource.read();
-    return <_Koenig {...props} />;
+    return (
+        <div>
+            {/* <_Koenig {...props} /> */}
+            <div>Hello</div>
+        </div>
+    );
 };
 
 export default class KoenigReactEditor extends Component {
