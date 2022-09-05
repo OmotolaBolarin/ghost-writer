@@ -74,12 +74,22 @@ const editorResource = fetchKoenig();
 
 const KoenigComposer = (props) => {
     const {KoenigComposer: _KoenigComposer} = editorResource.read();
-    return <_KoenigComposer {...props} />;
+    return (
+        <div>
+            {/* <_KoenigComposer {...props} />; */}
+            <div>KoeningComposer</div>
+        </div>
+    )      
 };
 
 const KoenigEditor = (props) => {
     const {KoenigEditor: _KoenigEditor} = editorResource.read();
-    return <_KoenigEditor {...props} />;
+    return (
+        <div>
+            {/* <_KoenigEditor {...props} /> */}
+            <div>KoeningEditor</div>
+        </div>
+    )
 };
 
 export default class KoenigLexicalEditor extends Component {
